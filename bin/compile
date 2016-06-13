@@ -14,6 +14,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
+#Instala el notebook de bash
+pip install bash_kernel
+python -m bash_kernel.install
+
 set -eo pipefail
 
 echo "-----> Starting compile step..."
@@ -77,9 +82,6 @@ mkdir -p $build/.profile.d
 	export LANG=C.UTF-8  
 EOF
 
-#Instala el notebook de bash
-pip install bash_kernel --upgrade
-python -m bash_kernel.install
 
 echo "-----> Purging cache"
 rm -rf $cache/*
