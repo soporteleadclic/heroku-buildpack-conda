@@ -83,6 +83,9 @@ EOF
 echo "-----> Purging cache"
 rm -rf $cache/*
 
+#Instala pygresql
+pip install pygresql
+
 #Instala el notebook de bash
 #echo "-----> PIP install bash"
 #pip install bash_kernel
