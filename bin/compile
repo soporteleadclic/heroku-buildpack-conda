@@ -68,13 +68,6 @@ cp -a $conda_temp/* $conda_build/
 
 echo "-----> Finished compile step"
 
-#Instala el notebook de bash
-echo "-----> PIP install bash"
-pip install bash_kernel
-echo "-----> PIP installed bash"
-python -m bash_kernel.install
-echo "-----> PYTHON bash installed"
-
 echo "-----> Create .profile.d"
 mkdir -p $build/.profile.d
 	cat <<-'EOF' > $build/.profile.d/conda.sh
@@ -89,4 +82,11 @@ EOF
 
 echo "-----> Purging cache"
 rm -rf $cache/*
+
+#Instala el notebook de bash
+echo "-----> PIP install bash"
+pip install bash_kernel
+echo "-----> PIP installed bash"
+#python -m bash_kernel.install
+echo "-----> PYTHON bash installed"
 
