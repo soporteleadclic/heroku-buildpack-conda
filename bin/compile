@@ -87,6 +87,6 @@ rm -rf $cache/*
 echo "-----> PIP install bash"
 pip install bash_kernel
 echo "-----> PIP installed bash"
-#python -m bash_kernel.install
+python -m bash_kernel.install
 echo "-----> PYTHON bash installed"
 
