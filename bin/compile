@@ -78,7 +78,7 @@ mkdir -p $build/.profile.d
 EOF
 
 #Instala el notebook de bash
-#pip install bash_kernel
+pip install bash_kernel
 python -m bash_kernel.install
 
 echo "-----> Purging cache"
