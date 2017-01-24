@@ -83,10 +83,12 @@ EOF
 echo "-----> Purging cache"
 rm -rf $cache/*
 
-#Instala pygresql
+conda install -y numpy scipy scikit-image scikit-learn statsmodels nltk jupyter matplotlib anaconda-client pygresql=5.0.1
+
 pip install pygresql
-pip install scikit-learn
 pip install mlpy
 pip install bash_kernel
+
 python -m bash_kernel.install
+
 
