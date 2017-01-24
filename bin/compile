@@ -83,12 +83,14 @@ EOF
 echo "-----> Purging cache"
 rm -rf $cache/*
 
-conda install -y numpy scipy scikit-image scikit-learn statsmodels nltk jupyter matplotlib anaconda-client pygresql=5.0.1
+conda install -y anaconda-client
+conda install -y numpy scipy scikit-image scikit-learn statsmodels nltk jupyter matplotlib  
+conda install -y -c bioconda pygresql=5.0.1
 
-pip install pygresql
-pip install mlpy
-pip install bash_kernel
+#pip install pygresql
+#pip install mlpy
+#pip install bash_kernel
 
-python -m bash_kernel.install
+#python -m bash_kernel.install
 
 
