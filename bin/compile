@@ -87,11 +87,5 @@ rm -rf $cache/*
 pip install pygresql
 pip install scikit-learn
 pip install mlpy
-
-#Instala el notebook de bash
-#echo "-----> PIP install bash"
-#pip install bash_kernel
-#echo "-----> PIP installed bash"
-#python -m bash_kernel.install
-#echo "-----> PYTHON bash installed"
+pip install bash_kernel
 
