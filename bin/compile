@@ -88,4 +88,5 @@ pip install pygresql
 pip install scikit-learn
 pip install mlpy
 pip install bash_kernel
+python -m bash_kernel.install
 
