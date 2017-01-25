@@ -50,8 +50,7 @@ export PATH=$PATH:$conda_temp/bin
 
 #pip install pygresql
 #conda install -y anaconda-client 
-conda install -y pandas iopro
-#conda install -y wget workerpool parsel memory_profiler libuuid jpeg joblib basemap numpy scikit-image scikit-learn neon statsmodels matplotlib ujson gevent-websocket 
+conda install -y pandas
 conda install -y -c bioconda pygresql=5.0.1
 
 echo "---> Updating environment"
